@@ -1,0 +1,18 @@
+
+<div  [hidden]="t1">
+    {{rooms.availableRooms??'no rooms available'}}
+    <div class="text-red-400 flex justify-center bg-slate-300 m-3 p-2 rounded" *ngIf="rooms?.availableRooms">
+        <p>rooms works! {{name}}</p>
+        <div class="text-teal-700 flex justify-center" [innerText]="num1"></div>
+
+    </div>
+</div>
+<div class="container flex justify-center">
+    <button (click)="toggle()">toggle</button>
+</div>
+<div class="text-red-400 flex justify-center bg-slate-300 m-3 p-2 rounded">
+    <p>rooms works! {{name}}</p>
+</div>
+<div class="text-red-400 flex justify-center bg-slate-300 m-3 p-2 rounded">
+    <p>rooms works! {{name}}</p>
+</div>
